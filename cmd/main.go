@@ -12,7 +12,7 @@ import (
 	"go.uber.org/zap"
 )
 
-const svcName = "post"
+const svcName = "blog"
 
 func main() {
 

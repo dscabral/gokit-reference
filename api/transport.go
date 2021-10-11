@@ -34,6 +34,9 @@ func MakeHandler(svcName string, svc post.PostService) http.Handler {
 		EncodeResponse,
 		opts...,
 	))
+	r.GetFunc("/live", func(writer http.ResponseWriter, request *http.Request) {
+		writer.Write([]byte("UP"))
+	})
 
 	return r
 
